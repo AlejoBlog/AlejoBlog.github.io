@@ -1,0 +1,19 @@
+:root {
+  --color-principal: #0b1b3a;
+  --color-primario: #0b1b3a;
+  --color-secundario: #21a8ff;
+  --color-acento: #38f28b;
+  --color-lima: #c7ff3d;
+  --color-texto: #eaf3ff;
+  --color-texto-suave: #b8c7dc;
+  --color-fondo: #06111f;
+  --color-blanco: #ffffff;
+  --color-negro-puro: #000;
+  --color-gris-claro: rgba(255,255,255,.12);
+  --fuente-principal: 'Inter', sans-serif;
+  --fuente-display: 'Rajdhani', sans-serif;
+  --sombra-suave: 0 10px 30px rgba(0, 0, 0, .28);
+  --sombra-intensa: 0 20px 60px rgba(33, 168, 255, .25);
+  --gradiente-fondo: radial-gradient(circle at top left, rgba(33,168,255,.24), transparent 35%), radial-gradient(circle at bottom right, rgba(56,242,139,.16), transparent 34%), linear-gradient(135deg, #06111f 0%, #0b1b3a 58%, #101828 100%);
+  --gradiente-card: linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.04));
+}

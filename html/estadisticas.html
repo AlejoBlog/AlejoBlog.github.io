@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estadísticas - El Sueño de un Futbolista</title>
+  <meta name="description" content="Resumen deportivo por temporadas de Alejo Encinas Camacho." />
+  <meta name="keywords" content="Alejo Encinas Camacho, fútbol base, futbolista, Ogíjares 89, Alhendín, Segunda Andaluza Infantil, sueño futbolista" />
+  <meta property="og:title" content="Estadísticas - El Sueño de un Futbolista" />
+  <meta property="og:description" content="Resumen deportivo por temporadas de Alejo Encinas Camacho." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../images/alejo-avatar.svg" />
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="menu-3d" aria-label="Navegación principal">
+    <div class="brand-mini">
+      <span class="brand-mark">AE</span>
+      <span>Alejo Encinas Camacho</span>
+    </div>
+    <div class="menu-right">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">☰ <span>Menú</span></label>
+      <div class="menu-contenedor">
+        <a href="../index.html">Inicio</a>
+        <a href="galeria.html">Galería</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="diario.html">Diario</a>
+        <a href="logros.html">Logros</a>
+        <a href="videos.html">Videos</a>
+        <a href="estadisticas.html" class="active">Estadísticas</a>
+        <a href="historia.html">Historia</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </nav>
+  <header class="efectos3d hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Proyecto deportivo personal</p>
+      <h1>Trayectoria y evolución</h1>
+      <p>Resumen por temporadas, clubes, categorías y posiciones principales.</p>
+    </div>
+  </header>
+
+  <main class="estadistica-container">
+    <section class="table-card">
+      <h2>Resumen de carrera</h2>
+      <div class="table-wrapper"><table><thead><tr><th>Temporada</th><th>Club</th><th>Categoría</th><th>Rol / posición</th><th>Observaciones</th></tr></thead><tbody>
+<!--<tr><td>2018/19</td><td>Ogíjares 89</td><td>Prebenjamín</td><td>Portero</td><td>Primer contacto serio con el fútbol. Alejo empezó bajo palos, aprendiendo valentía, reflejos y responsabilidad desde la portería.</td></tr>-->
+<tr><td>2019/20</td><td>Ogíjares 89</td><td>Prebenjamín de segundo año</td><td>Portero</td><td>Primer contacto serio con el fútbol. Alejo empezó bajo palos, aprendiendo valentía, reflejos y responsabilidad desde la portería.</td></tr>
+<tr><td>2020/21</td><td>Ogíjares 89</td><td>Benjamín</td><td>Portero</td><td>Siguió creciendo técnicamente como portero, ganando confianza con el balón y entendiendo que mejorar exige constancia, humildad y muchas repeticiones.</td></tr>
+<tr><td>2021/22</td><td>Ogíjares 89</td><td>Benjamín de segundo año</td><td>Jugador de equipo</td><td>Decidió dejar la portería para probar como jugador. Aunque no todos confiaban en que pudiera hacerlo bien, estudió videos en YouTube, entrenó cada día y empezó a transformar dudas en progreso.</td></tr>
+<tr><td>2022/23</td><td>Ogíjares 89</td><td>Alevín</td><td>Crecimiento competitivo</td><td>Afrontó una etapa de mayor exigencia, aprendiendo a competir con más ritmo y a asumir responsabilidades dentro del equipo.</td></tr>
+<tr><td>2023/24</td><td>Ogíjares 89</td><td>Alevín de segundo año</td><td>Madurez futbolística</td><td>Consolidó hábitos de entrenamiento y una mentalidad de mejora constante, preparado para el salto al fútbol infantil.</td></tr>
+<tr><td>2024/25</td><td>Ogíjares 89</td><td>Infantil</td><td>Adaptación al fútbol infantil</td><td>Vivió el cambio físico, táctico y competitivo de la categoría infantil, sumando experiencia y carácter.</td></tr>
+<tr><td>2025/26</td><td>Alhendín</td><td>Segunda Andaluza Infantil</td><td>Lateral izquierdo / central</td><td>Nuevo club y nuevo reto. Empezó como lateral izquierdo, en el tercer partido pasó a central y terminó la temporada jugando todos los minutos hasta el final.</td></tr></tbody></table></div>
+    </section>
+    <section class="stats-grid">
+      <article><strong>7</strong><span>temporadas documentadas</span></article>
+      <article><strong>2</strong><span>clubes: Ogíjares 89 y Alhendín</span></article>
+      <article><strong>4</strong><span>roles clave: portero, jugador, lateral, central</span></article>
+      <article><strong>100%</strong><span>minutos jugados desde que se asentó como central en 2025/26</span></article>
+    </section>
+    <section class="chart-card"><canvas id="evolucionChart" aria-label="Evolución de Alejo por temporadas"></canvas></section>
+  </main>
+  <script>
+    const ctx = document.getElementById('evolucionChart');
+    if (ctx) {
+      new Chart(ctx, { type: 'line', data: { labels: ['2019/20', '2020/21', '2021/22', '2022/23', '2023/24', '2024/25', '2025/26'], datasets: [{ label: 'Exigencia competitiva estimada por etapa', data: [1,2,3,4,5,6,7,8], borderColor: '#38f28b', backgroundColor: 'rgba(56,242,139,.18)', tension: .35, fill: true, pointBackgroundColor: '#21a8ff' }] }, options: { responsive: true, plugins: { legend: { labels: { color: '#eaf3ff' } } }, scales: { x: { ticks: { color: '#d7e6ff' }, grid: { color: 'rgba(255,255,255,.08)' } }, y: { ticks: { color: '#d7e6ff' }, grid: { color: 'rgba(255,255,255,.08)' } } } } });
+    }
+  </script>
+  <footer class="contacto-page">
+    <div class="contacto-page-footer-left">© 2026 Alejo Encinas Camacho. Proyecto web personal.</div>
+    <div class="contacto-page-footer-right">
+      <span>Sueño, constancia y fútbol base.</span>
+    </div>
+  </footer>
+  <button id="toTop" title="Volver arriba" aria-label="Volver arriba">↑</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>

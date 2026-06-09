@@ -1,0 +1,237 @@
+[33mcommit e093ea51e492726427e6c726064a9683e5b1648f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Tocho226 <tochogit@gmail.com>
+Date:   Tue Jun 9 14:21:02 2026 +0200
+
+    Subida del Proyecto
+
+ Alejo.png                                          | Bin [31m0[m -> [32m2003894[m bytes
+ ...e_un_Futbolista_Alejo_Menu_Grande_Foto_Fija.zip | Bin [31m0[m -> [32m189853008[m bytes
+ README (copia).md                                  |  53 [32m+++[m
+ actualizar_galerias.py                             | 107 [32m+++++[m
+ css/auditoria_css.sh                               |  38 [32m++[m
+ css/base.css                                       |   7 [32m+[m
+ css/components.css                                 | 251 [32m++++++++++++[m
+ css/components1.css                                | 251 [32m++++++++++++[m
+ css/contacto.css                                   |   1 [32m+[m
+ css/contacto1.css                                  |   1 [32m+[m
+ css/estilos.css                                    |   7 [32m+[m
+ css/layout.css                                     | 455 [32m+++++++++++++++++++++[m
+ css/media-queries.css                              | 103 [32m+++++[m
+ css/variables.css                                  |  19 [32m+[m
+ html/contacto.html                                 |  69 [32m++++[m
+ html/contacto1.html                                |  69 [32m++++[m
+ html/diario.html                                   |  62 [32m+++[m
+ html/estadisticas.html                             |  87 [32m++++[m
+ html/eventos.html                                  |  65 [32m+++[m
+ html/galeria-2018-19.html                          | 168 [32m++++++++[m
+ html/galeria-2019-20.html                          | 169 [32m++++++++[m
+ html/galeria-2020-21.html                          | 229 [32m+++++++++++[m
+ html/galeria-2021-22.html                          | 211 [32m++++++++++[m
+ html/galeria-2022-23.html                          | 151 [32m+++++++[m
+ html/galeria-2023-24.html                          | 253 [32m++++++++++++[m
+ html/galeria-2024-25.html                          | 307 [32m++++++++++++++[m
+ html/galeria-2025-26.html                          | 307 [32m++++++++++++++[m
+ html/galeria.html                                  |  69 [32m++++[m
+ html/historia.html                                 | 110 [32m+++++[m
+ html/index-en.html                                 |  59 [32m+++[m
+ html/logros.html                                   |  62 [32m+++[m
+ html/sobre.html                                    |  72 [32m++++[m
+ html/videos.html                                   |  73 [32m++++[m
+ images/2018-19/1.jpg                               | Bin [31m0[m -> [32m4193141[m bytes
+ images/2018-19/10.jpeg                             | Bin [31m0[m -> [32m9801242[m bytes
+ images/2018-19/11.jpeg                             | Bin [31m0[m -> [32m10774733[m bytes
+ images/2018-19/12.jpeg                             | Bin [31m0[m -> [32m10902655[m bytes
+ images/2018-19/13.jpeg                             | Bin [31m0[m -> [32m10510292[m bytes
+ images/2018-19/14.jpeg                             | Bin [31m0[m -> [32m10481317[m bytes
+ images/2018-19/2.jpeg                              | Bin [31m0[m -> [32m10044089[m bytes
+ images/2018-19/3.jpeg                              | Bin [31m0[m -> [32m11050542[m bytes
+ images/2018-19/4.jpeg                              | Bin [31m0[m -> [32m9369232[m bytes
+ images/2018-19/5.jpeg                              | Bin [31m0[m -> [32m10274625[m bytes
+ images/2018-19/6.jpeg                              | Bin [31m0[m -> [32m11817325[m bytes
+ images/2018-19/7.jpeg                              | Bin [31m0[m -> [32m11777751[m bytes
+ images/2018-19/8.jpeg                              | Bin [31m0[m -> [32m10532487[m bytes
+ images/2018-19/9.jpeg                              | Bin [31m0[m -> [32m10700941[m bytes
+ images/2019-20/p1.jpg                              | Bin [31m0[m -> [32m289599[m bytes
+ images/2019-20/p10.jpg                             | Bin [31m0[m -> [32m163744[m bytes
+ images/2019-20/p11.jpg                             | Bin [31m0[m -> [32m110557[m bytes
+ images/2019-20/p12.jpg                             | Bin [31m0[m -> [32m77809[m bytes
+ images/2019-20/p13.jpg                             | Bin [31m0[m -> [32m114861[m bytes
+ images/2019-20/p14.jpg                             | Bin [31m0[m -> [32m80822[m bytes
+ images/2019-20/p2.jpg                              | Bin [31m0[m -> [32m461873[m bytes
+ images/2019-20/p3.jpg                              | Bin [31m0[m -> [32m192752[m bytes
+ images/2019-20/p4.jpg                              | Bin [31m0[m -> [32m297656[m bytes
+ images/2019-20/p5.jpg                              | Bin [31m0[m -> [32m136341[m bytes
+ images/2019-20/p6.jpg                              | Bin [31m0[m -> [32m133195[m bytes
+ images/2019-20/p7.jpg                              | Bin [31m0[m -> [32m79566[m bytes
+ images/2019-20/p8.jpg                              | Bin [31m0[m -> [32m117389[m bytes
+ images/2019-20/p9.jpg                              | Bin [31m0[m -> [32m162308[m bytes
+ images/2020-21/b11.jpg                             | Bin [31m0[m -> [32m133105[m bytes
+ images/2020-21/b110.jpg                            | Bin [31m0[m -> [32m129222[m bytes
+ images/2020-21/b111.jpg                            | Bin [31m0[m -> [32m140024[m bytes
+ images/2020-21/b112.jpg                            | Bin [31m0[m -> [32m85532[m bytes
+ images/2020-21/b113.jpg                            | Bin [31m0[m -> [32m94016[m bytes
+ images/2020-21/b114.jpg                            | Bin [31m0[m -> [32m120740[m bytes
+ images/2020-21/b115.jpg                            | Bin [31m0[m -> [32m67919[m bytes
+ images/2020-21/b116.jpg                            | Bin [31m0[m -> [32m85236[m bytes
+ images/2020-21/b117.jpg                            | Bin [31m0[m -> [32m79864[m bytes
+ images/2020-21/b118.jpg                            | Bin [31m0[m -> [32m66056[m bytes
+ images/2020-21/b119.jpg                            | Bin [31m0[m -> [32m68032[m bytes
+ images/2020-21/b12.jpg                             | Bin [31m0[m -> [32m120183[m bytes
+ images/2020-21/b120.jpg                            | Bin [31m0[m -> [32m74038[m bytes
+ images/2020-21/b121.jpg                            | Bin [31m0[m -> [32m62093[m bytes
+ images/2020-21/b122.jpg                            | Bin [31m0[m -> [32m129530[m bytes
+ images/2020-21/b123.jpg                            | Bin [31m0[m -> [32m96043[m bytes
+ images/2020-21/b124.jpg                            | Bin [31m0[m -> [32m455199[m bytes
+ images/2020-21/b13.jpg                             | Bin [31m0[m -> [32m99081[m bytes
+ images/2020-21/b14.jpg                             | Bin [31m0[m -> [32m83094[m bytes
+ images/2020-21/b15.jpg                             | Bin [31m0[m -> [32m45425[m bytes
+ images/2020-21/b16.jpg                             | Bin [31m0[m -> [32m42910[m bytes
+ images/2020-21/b17.jpg                             | Bin [31m0[m -> [32m83798[m bytes
+ images/2020-21/b18.jpg                             | Bin [31m0[m -> [32m54408[m bytes
+ images/2020-21/b19.jpg                             | Bin [31m0[m -> [32m57543[m bytes
+ images/2021-22/IMG-20260606-WA0025.jpg             | Bin [31m0[m -> [32m440590[m bytes
+ images/2021-22/IMG-20260606-WA0026.jpg             | Bin [31m0[m -> [32m438985[m bytes
+ images/2021-22/IMG-20260606-WA0027.jpg             | Bin [31m0[m -> [32m452219[m bytes
+ images/2021-22/b21.jpg                             | Bin [31m0[m -> [32m151447[m bytes
+ images/2021-22/b210.jpg                            | Bin [31m0[m -> [32m173312[m bytes
+ images/2021-22/b211.jpg                            | Bin [31m0[m -> [32m137994[m bytes
+ images/2021-22/b212.jpg                            | Bin [31m0[m -> [32m141864[m bytes
+ images/2021-22/b213.jpg                            | Bin [31m0[m -> [32m151424[m bytes
+ images/2021-22/b214.jpg                            | Bin [31m0[m -> [32m160086[m bytes
+ images/2021-22/b215.jpg                            | Bin [31m0[m -> [32m146552[m bytes
+ images/2021-22/b216.jpg                            | Bin [31m0[m -> [32m215247[m bytes
+ images/2021-22/b217.jpg                            | Bin [31m0[m -> [32m133552[m bytes
+ images/2021-22/b218.jpg                            | Bin [31m0[m -> [32m150310[m bytes
+ images/2021-22/b22.jpg                             | Bin [31m0[m -> [32m168181[m bytes
+ images/2021-22/b23.jpg                             | Bin [31m0[m -> [32m160414[m bytes
+ images/2021-22/b24.jpg                             | Bin [31m0[m -> [32m141808[m bytes
+ images/2021-22/b25.jpg                             | Bin [31m0[m -> [32m172051[m bytes
+ images/2021-22/b26.jpg                             | Bin [31m0[m -> [32m182282[m bytes
+ images/2021-22/b27.jpg                             | Bin [31m0[m -> [32m163375[m bytes
+ images/2021-22/b28.jpg                             | Bin [31m0[m -> [32m148583[m bytes
+ images/2021-22/b29.jpg                             | Bin [31m0[m -> [32m155507[m bytes
+ images/2022-23/a11.jpg                             | Bin [31m0[m -> [32m37537[m bytes
+ images/2022-23/a110.jpg                            | Bin [31m0[m -> [32m406884[m bytes
+ images/2022-23/a111.jpg                            | Bin [31m0[m -> [32m649248[m bytes
+ images/2022-23/a12.jpg                             | Bin [31m0[m -> [32m151120[m bytes
+ images/2022-23/a13.jpg                             | Bin [31m0[m -> [32m142134[m bytes
+ images/2022-23/a14.jpg                             | Bin [31m0[m -> [32m185415[m bytes
+ images/2022-23/a15.jpg                             | Bin [31m0[m -> [32m164151[m bytes
+ images/2022-23/a16.jpg                             | Bin [31m0[m -> [32m116218[m bytes
+ images/2022-23/a17.jpg                             | Bin [31m0[m -> [32m153780[m bytes
+ images/2022-23/a18.jpg                             | Bin [31m0[m -> [32m158009[m bytes
+ images/2022-23/a19.jpg                             | Bin [31m0[m -> [32m157531[m bytes
+ images/2023-24/a21.jpg                             | Bin [31m0[m -> [32m190891[m bytes
+ images/2023-24/a210.jpg                            | Bin [31m0[m -> [32m237947[m bytes
+ images/2023-24/a211.jpg                            | Bin [31m0[m -> [32m199390[m bytes
+ images/2023-24/a212.jpg                            | Bin [31m0[m -> [32m302710[m bytes
+ images/2023-24/a213.jpg                            | Bin [31m0[m -> [32m397828[m bytes
+ images/2023-24/a214.jpg                            | Bin [31m0[m -> [32m248022[m bytes
+ images/2023-24/a215.jpg                            | Bin [31m0[m -> [32m355293[m bytes
+ images/2023-24/a216.jpg                            | Bin [31m0[m -> [32m347332[m bytes
+ images/2023-24/a217.jpg                            | Bin [31m0[m -> [32m578827[m bytes
+ images/2023-24/a218.jpg                            | Bin [31m0[m -> [32m643085[m bytes
+ images/2023-24/a219.jpg                            | Bin [31m0[m -> [32m690731[m bytes
+ images/2023-24/a22.jpg                             | Bin [31m0[m -> [32m198420[m bytes
+ images/2023-24/a220.jpg                            | Bin [31m0[m -> [32m180288[m bytes
+ images/2023-24/a221.jpg                            | Bin [31m0[m -> [32m183701[m bytes
+ images/2023-24/a222.jpg                            | Bin [31m0[m -> [32m113249[m bytes
+ images/2023-24/a223.jpg                            | Bin [31m0[m -> [32m211813[m bytes
+ images/2023-24/a224.jpg                            | Bin [31m0[m -> [32m225297[m bytes
+ images/2023-24/a225.jpg                            | Bin [31m0[m -> [32m233901[m bytes
+ images/2023-24/a226.jpg                            | Bin [31m0[m -> [32m556234[m bytes
+ images/2023-24/a227.jpg                            | Bin [31m0[m -> [32m554571[m bytes
+ images/2023-24/a228.jpg                            | Bin [31m0[m -> [32m608443[m bytes
+ images/2023-24/a23.jpg                             | Bin [31m0[m -> [32m371403[m bytes
+ images/2023-24/a24.jpg                             | Bin [31m0[m -> [32m284281[m bytes
+ images/2023-24/a25.jpg                             | Bin [31m0[m -> [32m181932[m bytes
+ images/2023-24/a26.jpg                             | Bin [31m0[m -> [32m214139[m bytes
+ images/2023-24/a27.jpg                             | Bin [31m0[m -> [32m407428[m bytes
+ images/2023-24/a28.jpg                             | Bin [31m0[m -> [32m258710[m bytes
+ images/2023-24/a29.jpg                             | Bin [31m0[m -> [32m229340[m bytes
+ images/2024-25/i110.jpg                            | Bin [31m0[m -> [32m789792[m bytes
+ images/2024-25/i115.jpg                            | Bin [31m0[m -> [32m255197[m bytes
+ images/2024-25/i116.jpg                            | Bin [31m0[m -> [32m225748[m bytes
+ images/2024-25/i117.jpg                            | Bin [31m0[m -> [32m279773[m bytes
+ images/2024-25/i118.jpg                            | Bin [31m0[m -> [32m335581[m bytes
+ images/2024-25/i119.jpg                            | Bin [31m0[m -> [32m173966[m bytes
+ images/2024-25/i120.jpg                            | Bin [31m0[m -> [32m157507[m bytes
+ images/2024-25/i131.jpg                            | Bin [31m0[m -> [32m236685[m bytes
+ images/2024-25/i132.jpg                            | Bin [31m0[m -> [32m200791[m bytes
+ images/2024-25/i136.jpg                            | Bin [31m0[m -> [32m936509[m bytes
+ images/2024-25/i137.jpg                            | Bin [31m0[m -> [32m724454[m bytes
+ images/2024-25/i138.jpg                            | Bin [31m0[m -> [32m553333[m bytes
+ images/2024-25/i140.jpg                            | Bin [31m0[m -> [32m252240[m bytes
+ images/2024-25/i141.jpg                            | Bin [31m0[m -> [32m402417[m bytes
+ images/2024-25/i143.jpg                            | Bin [31m0[m -> [32m291991[m bytes
+ images/2024-25/i145.jpg                            | Bin [31m0[m -> [32m390151[m bytes
+ images/2024-25/i146.jpg                            | Bin [31m0[m -> [32m398176[m bytes
+ images/2024-25/i147.jpg                            | Bin [31m0[m -> [32m203066[m bytes
+ images/2024-25/i148.jpg                            | Bin [31m0[m -> [32m275338[m bytes
+ images/2024-25/i15.jpg                             | Bin [31m0[m -> [32m570062[m bytes
+ images/2024-25/i154.jpg                            | Bin [31m0[m -> [32m181105[m bytes
+ images/2024-25/i155.jpg                            | Bin [31m0[m -> [32m173065[m bytes
+ images/2024-25/i157.jpg                            | Bin [31m0[m -> [32m180572[m bytes
+ images/2024-25/i158.jpg                            | Bin [31m0[m -> [32m145471[m bytes
+ images/2024-25/i159.jpg                            | Bin [31m0[m -> [32m148418[m bytes
+ images/2024-25/i16.jpg                             | Bin [31m0[m -> [32m664918[m bytes
+ images/2024-25/i160.jpg                            | Bin [31m0[m -> [32m154768[m bytes
+ images/2024-25/i161.jpg                            | Bin [31m0[m -> [32m158744[m bytes
+ images/2024-25/i162.jpg                            | Bin [31m0[m -> [32m153248[m bytes
+ images/2024-25/i163.jpg                            | Bin [31m0[m -> [32m199880[m bytes
+ images/2024-25/i164.jpg                            | Bin [31m0[m -> [32m239713[m bytes
+ images/2024-25/i165.jpg                            | Bin [31m0[m -> [32m172556[m bytes
+ images/2024-25/i166.jpg                            | Bin [31m0[m -> [32m101022[m bytes
+ images/2024-25/i167.jpg                            | Bin [31m0[m -> [32m107940[m bytes
+ images/2024-25/i17.jpg                             | Bin [31m0[m -> [32m281821[m bytes
+ images/2024-25/i18.jpg                             | Bin [31m0[m -> [32m175661[m bytes
+ images/2024-25/i19.jpg                             | Bin [31m0[m -> [32m201232[m bytes
+ images/2025-26/i21.jpg                             | Bin [31m0[m -> [32m48366[m bytes
+ images/2025-26/i210.jpg                            | Bin [31m0[m -> [32m50130[m bytes
+ images/2025-26/i211.jpg                            | Bin [31m0[m -> [32m85364[m bytes
+ images/2025-26/i212.jpg                            | Bin [31m0[m -> [32m107860[m bytes
+ images/2025-26/i213.jpg                            | Bin [31m0[m -> [32m43006[m bytes
+ images/2025-26/i214.jpg                            | Bin [31m0[m -> [32m205059[m bytes
+ images/2025-26/i215.jpg                            | Bin [31m0[m -> [32m69641[m bytes
+ images/2025-26/i216.jpg                            | Bin [31m0[m -> [32m90020[m bytes
+ images/2025-26/i217.jpg                            | Bin [31m0[m -> [32m128531[m bytes
+ images/2025-26/i218.jpg                            | Bin [31m0[m -> [32m93087[m bytes
+ images/2025-26/i219.jpg                            | Bin [31m0[m -> [32m70812[m bytes
+ images/2025-26/i22.jpg                             | Bin [31m0[m -> [32m85699[m bytes
+ images/2025-26/i220.jpg                            | Bin [31m0[m -> [32m76562[m bytes
+ images/2025-26/i221.jpg                            | Bin [31m0[m -> [32m75502[m bytes
+ images/2025-26/i222.jpg                            | Bin [31m0[m -> [32m181612[m bytes
+ images/2025-26/i223.jpg                            | Bin [31m0[m -> [32m251096[m bytes
+ images/2025-26/i224.jpg                            | Bin [31m0[m -> [32m906127[m bytes
+ images/2025-26/i225.jpg                            | Bin [31m0[m -> [32m661473[m bytes
+ images/2025-26/i226.jpg                            | Bin [31m0[m -> [32m501651[m bytes
+ images/2025-26/i227.jpg                            | Bin [31m0[m -> [32m292024[m bytes
+ images/2025-26/i228.jpg                            | Bin [31m0[m -> [32m431825[m bytes
+ images/2025-26/i229.jpg                            | Bin [31m0[m -> [32m250899[m bytes
+ images/2025-26/i23.jpg                             | Bin [31m0[m -> [32m35425[m bytes
+ images/2025-26/i230.jpg                            | Bin [31m0[m -> [32m179437[m bytes
+ images/2025-26/i231.jpg                            | Bin [31m0[m -> [32m254403[m bytes
+ images/2025-26/i232.jpg                            | Bin [31m0[m -> [32m230079[m bytes
+ images/2025-26/i234.jpg                            | Bin [31m0[m -> [32m234620[m bytes
+ images/2025-26/i235.jpg                            | Bin [31m0[m -> [32m283563[m bytes
+ images/2025-26/i236.jpg                            | Bin [31m0[m -> [32m2461010[m bytes
+ images/2025-26/i239.jpg                            | Bin [31m0[m -> [32m446315[m bytes
+ images/2025-26/i24.png                             | Bin [31m0[m -> [32m2003894[m bytes
+ images/2025-26/i25.png                             | Bin [31m0[m -> [32m2105330[m bytes
+ images/2025-26/i26.jpg                             | Bin [31m0[m -> [32m98709[m bytes
+ images/2025-26/i27.jpg                             | Bin [31m0[m -> [32m318280[m bytes
+ images/2025-26/i28.jpg                             | Bin [31m0[m -> [32m648769[m bytes
+ images/2025-26/i29.jpg                             | Bin [31m0[m -> [32m48111[m bytes
+ images/2025-26/i33.jpg                             | Bin [31m0[m -> [32m245551[m bytes
+ images/alejo-avatar.jpg                            | Bin [31m0[m -> [32m35425[m bytes
+ images/alejo-avatar.svg                            |   1 [32m+[m
+ images/alejo-portada.png                           | Bin [31m0[m -> [32m409950[m bytes
+ images/favicon.ico                                 | Bin [31m0[m -> [32m9752[m bytes
+ images/placeholder.txt                             |   1 [32m+[m
+ index.html                                         |  80 [32m++++[m
+ index1.html                                        |  80 [32m++++[m
+ js/main.js                                         | 109 [32m+++++[m
+ robots.txt                                         |   4 [32m+[m
+ servidor_linux_mint.sh                             |  16 [32m+[m
+ sitemap.xml                                        |   9 [32m+[m
+ 230 files changed, 4185 insertions(+)

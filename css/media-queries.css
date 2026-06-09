@@ -1,0 +1,103 @@
+@media (max-width: 900px) {
+  .menu-icon { display: inline-flex; align-items: center; gap: .45rem; padding: .7rem 1rem; border-radius: 999px; background: rgba(255,255,255,.10); }
+  .menu-contenedor { position: absolute; right: 1rem; top: 72px; width: min(320px, calc(100vw - 2rem)); display: none; flex-direction: column; align-items: stretch; padding: .8rem; border-radius: 22px; background: rgba(6,17,31,.96); border: 1px solid rgba(255,255,255,.12); }
+  #menu-toggle:checked ~ .menu-contenedor { display: flex; }
+  .intro-card, .sobre-grid { grid-template-columns: 1fr; }
+  .values-grid, .stats-grid, .eventos-grid, .season-grid, .galeria-grid { grid-template-columns: 1fr; }
+  .brand-mini span:last-child { display: none; }
+}
+
+@media (max-width: 900px) {
+  .season-switcher {
+    grid-template-columns: 1fr;
+  }
+
+  .season-pills {
+    justify-content: flex-start;
+  }
+
+  .gallery-photo {
+    grid-template-rows: 220px auto;
+  }
+
+  .gallery-photo a {
+    height: 220px;
+  }
+}
+
+@media (max-width: 560px) {
+  .season-pill {
+    flex: 1 1 calc(50% - .55rem);
+  }
+
+  .gallery-lightbox__topbar,
+  .gallery-lightbox__bottombar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .gallery-lightbox__stage {
+    min-height: 52vh;
+  }
+
+  .gallery-lightbox__arrow {
+    width: 42px;
+    height: 42px;
+    font-size: 1.65rem;
+  }
+
+  .gallery-lightbox__arrow--prev { left: .35rem; }
+  .gallery-lightbox__arrow--next { right: .35rem; }
+}
+
+/* === Anulación final: mantener menú visible y compacto en cualquier ancho === */
+@media (max-width: 900px) {
+  nav.menu-3d {
+    position: fixed !important;
+    top: .55rem !important;
+    left: 50% !important;
+    right: auto !important;
+    width: calc(100% - 1rem) !important;
+    transform: translateX(-50%) !important;
+    z-index: 20000 !important;
+    padding: .45rem .65rem !important;
+    border-radius: 24px !important;
+    background: linear-gradient(90deg, rgba(6,17,31,.30), rgba(6,17,31,.16), rgba(6,17,31,.30)) !important;
+    backdrop-filter: blur(12px) saturate(1.15) !important;
+    -webkit-backdrop-filter: blur(12px) saturate(1.15) !important;
+  }
+
+  .menu-icon {
+    padding: .5rem .72rem !important;
+  }
+
+  .menu-contenedor {
+    position: absolute !important;
+    right: .4rem !important;
+    top: calc(100% + .55rem) !important;
+    width: min(300px, calc(100vw - 1.2rem)) !important;
+    background: rgba(6,17,31,.88) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+  }
+}
+
+
+/* === Ajuste final responsivo: menú legible y foto fija === */
+@media (max-width: 900px) {
+  nav.menu-3d {
+    min-height: 58px !important;
+    padding: .5rem .72rem !important;
+  }
+
+  .menu-icon {
+    font-size: .95rem !important;
+    padding: .6rem .85rem !important;
+  }
+
+  .menu-contenedor a {
+    padding: .82rem 1rem !important;
+    font-size: .98rem !important;
+    line-height: 1.1 !important;
+  }
+}

@@ -4,7 +4,7 @@
   #menu-toggle:checked ~ .menu-contenedor { display: flex; }
   .intro-card, .sobre-grid { grid-template-columns: 1fr; }
   .values-grid, .stats-grid, .eventos-grid, .season-grid, .galeria-grid { grid-template-columns: 1fr; }
-  .brand-mini span:last-child { display: none; }
+  .brand-mini span:last-child { display: inline-block; }
 }
 
 @media (max-width: 900px) {
@@ -99,5 +99,66 @@
     padding: .82rem 1rem !important;
     font-size: .98rem !important;
     line-height: 1.1 !important;
+  }
+}
+
+
+/* === Corrección auditoría: marca visible en móvil === */
+@media (max-width: 900px) {
+  .brand-mini {
+    display: flex !important;
+    align-items: center !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    max-width: calc(100% - 104px) !important;
+  }
+
+  .brand-mini span:last-child {
+    display: inline-block !important;
+    max-width: min(46vw, 190px) !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    font-size: .92rem !important;
+    line-height: 1.05 !important;
+  }
+
+  .menu-right {
+    flex: 0 0 auto !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand-mini span:last-child {
+    max-width: 128px !important;
+    font-size: .82rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand-mini span:last-child {
+    max-width: 96px !important;
+    font-size: .76rem !important;
+  }
+}
+
+
+/* === Corrección adicional: nombre completo visible en móvil estrecho === */
+@media (max-width: 480px) {
+  .brand-mini span:last-child {
+    display: block !important;
+    max-width: 134px !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    font-size: .78rem !important;
+    line-height: 1.05 !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .brand-mini span:last-child {
+    max-width: 112px !important;
+    font-size: .72rem !important;
   }
 }

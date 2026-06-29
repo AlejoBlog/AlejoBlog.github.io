@@ -138,7 +138,7 @@ th { color: var(--color-acento); }
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center;
+  object-position: top center;
   transition: transform .28s ease, filter .28s ease;
 }
 
